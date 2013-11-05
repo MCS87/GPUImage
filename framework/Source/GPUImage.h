@@ -18,6 +18,11 @@
 #import "GPUImageUIElement.h"
 #import "GPUImageBuffer.h"
 
+#import "GPUImageProjectiveTransformationFilter.h"  // für perspektivische Korrektur
+#import "GPUImageAffineTransformFilter.h"           // insb. für resize
+#import "GPUImageDokuOptiFilter.h"
+
+
 // Filters
 #import "GPUImageFilter.h"
 #import "GPUImageTwoInputFilter.h"
