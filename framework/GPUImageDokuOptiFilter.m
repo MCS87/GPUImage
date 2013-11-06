@@ -33,10 +33,6 @@ NSString *const kGPUImageDokuOptiFragmentShaderString = SHADER_STRING
      
      
      
-     
-     
-     
-     
      // Alternative 1
      
 //     gl_FragColor = mix(textureColor, vec4((textureColor.rgb - vec3(filterOffset))/(textureColor2.rgb - vec3(filterOffset)), 1.0),1.5); // 2.0 ziemlich krass, hintergrund total weiss, schrift etwas zu blass

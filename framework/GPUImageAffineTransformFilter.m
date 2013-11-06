@@ -270,6 +270,20 @@ NSString *const kGPUImageAffineTransformationFragmentShaderString = SHADER_STRIN
             cropTextureCoordinates[6] = maxY; // 1,1
             cropTextureCoordinates[7] = 1.0 - minX;
         }; break;
+        case kGPUImageRotateRightFlipHorizontal: // Works
+        {
+            cropTextureCoordinates[0] = minX; // 0,0
+            cropTextureCoordinates[1] = minY;
+            
+            cropTextureCoordinates[2] = maxX; // 1,0
+            cropTextureCoordinates[3] = minY;
+            
+            cropTextureCoordinates[4] = minX; // 0,1
+            cropTextureCoordinates[5] = maxY;
+            
+            cropTextureCoordinates[6] = maxX; // 1,1
+            cropTextureCoordinates[7] = maxY;
+        }; break;
     }
     
     
