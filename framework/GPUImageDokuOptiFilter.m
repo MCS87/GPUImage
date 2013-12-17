@@ -97,7 +97,7 @@ NSString *const kGPUImageDokuOptiFragmentShaderString = SHADER_STRING
      // zähler und nenner clampen
 //     gl_FragColor = mix(textureColor, vec4(clamp((textureColor.rgb - vec3(myOffset)),0.0,1.0)/clamp((textureColor2.rgb - vec3(myOffset)), 0.08, 1.0), 1.0),weight);
      
-     gl_FragColor = mix(textureColor, vec4((textureColor.rgb - vec3(myOffset))/clamp((textureColor2.rgb - vec3(myOffset)), 0.275, 1.0), 1.0),weight); // 0.08..1.0; 0.33..1.0
+     gl_FragColor = mix(textureColor, vec4((textureColor.rgb - vec3(myOffset))/clamp((textureColor2.rgb - vec3(myOffset)), 0.15, 1.0), 1.0),weight); // 0.08..1.0; 0.33..1.0
 
      //     gl_FragColor = mix(textureColor, vec4((textureColor.rgb)/(textureColor2.rgb), 1.0),1.5); // total blass
      
